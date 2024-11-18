@@ -215,7 +215,7 @@ jobs:
           fi
 
       - name: Setup Chart.yaml
-        uses: mikefarah/yq@v4.44.3
+        uses: mikefarah/yq@v4.44.5
         with:
           cmd: |
             # Recursively finds all Chart.yaml files and sets their version and appVersion to the github ref
@@ -296,7 +296,7 @@ jobs:
           fi
 
       - name: Setup Chart.yaml
-        uses: mikefarah/yq@v4.44.3
+        uses: mikefarah/yq@v4.44.5
         with:
           cmd: |
             # Recursively finds all Chart.yaml files and sets their version and appVersion to the github ref
@@ -377,7 +377,7 @@ jobs:
           fi
 
       - name: Setup Chart.yaml
-        uses: mikefarah/yq@v4.44.3
+        uses: mikefarah/yq@v4.44.5
         with:
           cmd: |
             # Recursively finds all Chart.yaml files and sets their version and appVersion to the github ref
@@ -460,7 +460,7 @@ jobs:
           fi
 
       - name: Setup Chart.yaml
-        uses: mikefarah/yq@v4.44.3
+        uses: mikefarah/yq@v4.44.5
         with:
           cmd: |
             # Recursively finds all Chart.yaml files and sets their version and appVersion to the github ref
@@ -548,7 +548,7 @@ jobs:
         run: git fetch --force --tags
 
       - name: Import GPG key
-        uses: crazy-max/ghaction-import-gpg@01dd5d3ca463c7f10f7f4f7b4f177225ac661ee4 # v6.1.0
+        uses: crazy-max/ghaction-import-gpg@cb9bde2e2525e640591a934b1fd28eef1dcaf5e5 # v6.2.0
         id: import_gpg
         with:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
